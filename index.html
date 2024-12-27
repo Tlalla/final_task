@@ -12,6 +12,7 @@
     <header>
         <div class="headall">
             <img class="logo" src="./img/logos.png" alt="logo">
+            <img class="menu" src="./img/burger.svg" alt="menu">
             <div class="choice">
                 <p class="other">Home</p>
                 <p class="other">About Us</p>
@@ -30,12 +31,21 @@
                         <p>Training Materials</p>
                         <p>Rules and Guidelines</p>
                     </div>
+                    
                 </div>
-                <button class="register">Register Now ></button>
+                
+                <button  class="register"> <a href="#fourtHart">Register Now!</a>  </button>
             </div>
         </div>
     </header>
     <main>
+        <div class="others none">
+            <p class="oths">Home</p>
+            <p class="oths">About Us</p>
+            <p class="oths">Tournaments</p>
+            <p class="oths">Membership</p>
+            <p class="oths">Resources</p>
+        </div>
         <section>
             <article class="firstart">
                 <img class="groupphoto" src="./img/debat.jpg" alt="groupphoto">
@@ -50,11 +60,12 @@
                 <div class="valuecontainer">
                     <div class="h1div">
                         <h1 class="h1container">Our Values</h1>
+                        <p class="allprinciples">
+                            At the Debate Club, we are guided by principles that foster growth, respect, and inclusivity.
+                          </p>
                     </div>
                     
-                    <p class="allprinciples">
-                        At the Debate Club, we are guided by principles that foster growth, respect, and inclusivity.
-                      </p>
+                   
                       <div class="values-list" >
                         <div class="value-item" >
                           <img class="respectimg" src="./img/hands.jpeg" alt="Respect">
@@ -106,56 +117,74 @@
                 </div>
             </article>
 
-            <article class="fourthart">
+            <article class="fourthart"  id="fourtHart">
                 <div class="headofthird">
                     <h1>Stand Out as a Debater!</h1>
                     <h2>Register Now!</h2>
                 </div>
-                <div class="inputsandlabels">
+                <form><div class="inputsandlabels">
                     <div class="firstpartinputs">
-                        <div>
+                        <div class="divname">
                             <label class="spikernamelabel inputslabel" for="spikername"> Name:</label>
-                        <input class="spikername inputs" placeholder="Name" type="text" name="spikername">
+                        <input class="spikername inputs" placeholder="Name" type="text" name="spikername" required>
                         </div>
                         <br>
-                        <div>
+                        <div class="divsurname">
                             <label class="spikersurnamelabel inputslabel" for="spikersurname">Surname:</label>
-                        <input class="spikersurname inputs" type="text" placeholder="Surname" name="spikersurname">
+                        <input class="spikersurname inputs" type="text" placeholder="Surname" name="spikersurname" required>
                         </div>
                         <br>
-                        <div>
+                        <div class="divfaculty">
                             <label for="spikerfaculty" class="spikersfacultylabel inputslabel">Faculty:</label>
-                            <input type="text" class="spikerfaculty inputs" placeholder="Faculty" name="spikerfaculty">
+                            <input type="text" class="spikerfaculty inputs" placeholder="Faculty" required name="spikerfaculty">
                         </div>
 
-                        <br>
-                        <div>
-                            <label class="spikergrouplabel inputslabel" for="spikergroup">Group Number:</label>
-                            <input class="spikergroup inputs" type="text" placeholder="Group Number" name="spikergroup">
-                        </div>
+                       
+
                     </div>
                     <div class="secondpartinputs">
                         <div>
+                            <label class="spikergrouplabel inputslabel" for="spikergroup">Group Number:</label>
+                            <input class="spikergroup inputs" type="number" placeholder="Group Number" required name="spikergroup">
+                        </div>
+                        <br>
+                        <div class="yeardiv">
                             <label class="spikerstudyyearlabel inputslabel" for="spikerstudyyear">Your year of study:</label>
-                        <input class="spikerstudyyear inputs" type="number" placeholder="Year of study"
+                        <input class="spikerstudyyear inputs" type="number" required placeholder="Year of study"
                             name="spikerstudyyear">
                         </div>
                         <br>
                         <div>
                             <label class="spikernumberlabel inputslabel" for="spikernumber">Phone Number:</label>
-                            <input class="spikernumber inputs" type="number" placeholder="Phone Number" name="spikernumber">
+                            <input class="spikernumber inputs" type="tel" placeholder="Phone Number" required name="spikernumber">
                         </div>
-                        <div  class="sendblock">
-                            <div class="sendblocks">
-                                <button class="send">Send blank</button>
-                            </div>
-                        </div>
+                        
                         
                     </div>
                     
                 </div>
+                <div class="sendblocks">
+                    <button type="submit" class="send">Send blank</button>
+                </div>
+            </form>
+                
+                
+                    
+
+                    
                 
             </article>
+            <article class="successful none">
+                <div class="success ">
+                    <h1>Registration was successful!</h1>
+                    <h1>Wait for a response.</h1>
+                    <div>
+                        <button class="resubmit">Re-submit your application</button>
+                    </div>
+                    
+                </div>
+            </article>
+            
             <article class="fifthart">
                 <div class="fifthartblock">
                     <div class="fifthartblockwords">
@@ -168,6 +197,17 @@
                         <input class="suggestions" type="text">
                         <button class="backbutton">Send</button>
                     </div>
+                </div>
+            </article>
+
+            <article class="cooperation none">
+                <div>
+                    <h1>Your reply has been sent.</h1>
+                    <h2>Thanks for your cooperation.</h2>
+                    <div class="resenddiv">
+                        <button class="resend"> Resend</button>
+                    </div>
+                    
                 </div>
             </article>
         </section>
@@ -185,6 +225,32 @@
                 <img class="mail" src="./img/mail.png" alt="mail">
                 <p>adnsudk@gmail.com</p>
             </div>
+            
+            <div class="footer-nav">
+                <div>
+                    <ul>
+                        <li><a href="/about-us">About Us</a></li>
+                <li><a href="/services">Services</a></li>
+                <li><a href="/contact">Contact</a></li>
+                <li><a href="/privacy-policy">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <ul><li><a href="/tournaments">Tournaments</a></li>
+                        <li><a href="/past">Past</a></li>
+                        <li><a href="/upcoming">Upcoming</a></li>
+                    </ul>
+                </div>
+                <p class="member">Membership</p>
+                <div>
+                    <ul><li><a href="/resources">Resources</a></li>
+                        <li><a href="/debate-formats">Debate Formats</a></li>
+                        <li><a href="/trainings">Training Materials</a></li>
+                        <li><a href="/rules">Rules and Guidelines</a></li>
+                    </ul>
+                </div>
+            </div>
+            <p class="c2024">© 2024 Debat Club</p>
             </div>
             <div class="sociallang"><div class="instabook">
                 <a href="https://www.instagram.com/adnsudk?igsh=emY0ZHdwZmNieDdn"><img class="insta" src="./img/video.png" alt="instagam"></a>
