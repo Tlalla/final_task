@@ -96,7 +96,7 @@ function changeLanguage(selectElement) {
       window.location.href = './index.html';
     }
   }
-// fetch('https://sheetdb.io/api/v1/7axaezay79gf4')
+fetch('https://sheetdb.io/api/v1/7axaezay79gf4')
   .then(response => {
     if (!response) {
       throw new Error('Şəbəkə xətası baş verdi');
